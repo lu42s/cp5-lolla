@@ -1,0 +1,10 @@
+# SQL Server local para testes:  docker compose up -d
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-lolla
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Fiap@2026Lolla"
+    ports:
+      - "1433:1433"
